@@ -14,6 +14,7 @@ STATIC_URL = 'http://cdn.chrisamywedding.ca/'
 ADMIN_MEDIA_PREFIX = 'http://cdn.chrisamywedding.ca/admin/'
 MEDIA_URL = "http://cdn.chrisamywedding.ca/media/"
 CMS_MEDIA_URL = "/cms/"
+CMS_MEDIA_ROOT = "/"
 
 AWS_HEADERS = {
     'Cache-Control': 'max-age=86400',
