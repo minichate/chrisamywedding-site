@@ -8,6 +8,9 @@ django-debug-toolbar==0.9.4
 django-mptt==0.5.2
 django-sekizai==0.5
 django-storages==1.1.4
+eventlet==0.9.16
+greenlet==0.3.3
+gunicorn==0.13.4
 html5lib==0.90
 psycopg2==2.4.4
 wsgiref==0.1.2
