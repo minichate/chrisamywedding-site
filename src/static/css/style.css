@@ -44,10 +44,12 @@ table {
 
 html {
 	min-width: 820px;
+	min-height: 100%;
 }
 
 body {
 	min-width: 820px;
+	min-height: 100%;
 	font-family: 'Montaga', serif;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -67,6 +69,7 @@ body {
 .leaves {
 	background-image: url(../images/noise.png);
 	background-position: top center;
+	min-height: 100%;
 }
 
 strong {
