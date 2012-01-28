@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block base_content %}
+<div class="banner" id="banner">
+   <img src="{{STATIC_URL}}images/flip_left.png" class="flip left"/>
+   <img src="{{STATIC_URL}}images/flip_right.png" class="flip right" />
+</div>
+
+<script>
+   $(document).ready(function() {
+      var banner = $('.banner');
+      $('.banner .left').click(function(event) {
+         banner.animate({
+            backgroundPosition: '+=752'
+         }, {
+            duration: 500,
+            easing: 'swing'
+         });
+      });
+      
+      $('.banner .right').click(function(event) {
+         banner.animate({
+            backgroundPosition: '-=752'
+         }, {
+            duration: 500,
+            easing: 'swing'
+         });
+      });
+   });
+</script>
+{% placeholder template_1_content %}
+{% endblock %}
