@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     'cms.plugins.twitter',
     'django.contrib.admin',
     'gunicorn',
+    'storages',
 )
 
 # A sample logging configuration. The only tangible logging
