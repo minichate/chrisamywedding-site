@@ -13,4 +13,5 @@ greenlet==0.3.3
 gunicorn==0.13.4
 html5lib==0.90
 psycopg2==2.4.4
+pylibmc==1.2.2
 wsgiref==0.1.2
