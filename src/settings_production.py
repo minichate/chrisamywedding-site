@@ -1,7 +1,7 @@
 from settings import *
 from S3 import CallingFormat
 
-DEBUG = False
+DEBUG = True
 
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
@@ -13,7 +13,7 @@ AWS_STORAGE_BUCKET_NAME = 'chrisamywedding'
 STATIC_URL = 'http://cdn.chrisamywedding.ca/'
 ADMIN_MEDIA_PREFIX = 'http://cdn.chrisamywedding.ca/admin/'
 MEDIA_URL = "http://cdn.chrisamywedding.ca/media/"
-CMS_MEDIA_URL = "http://cdn.chrisamywedding.ca/cms/"
+CMS_MEDIA_URL = "/cms/"
 
 AWS_HEADERS = {
     'Cache-Control': 'max-age=86400',
