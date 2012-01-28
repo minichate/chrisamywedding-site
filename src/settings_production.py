@@ -1,6 +1,6 @@
 from settings import *
 
-DEBUG = True
+DEBUG = False
 
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_ACCESS_KEY_ID = 'AKIAI3FAOQGNLNXPLP4A'
