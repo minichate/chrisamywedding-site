@@ -1,4 +1,5 @@
 from settings import *
+from S3 import CallingFormat
 
 DEBUG = False
 
@@ -17,3 +18,8 @@ CMS_MEDIA_URL = "http://cdn.chrisamywedding.ca/cms/"
 AWS_HEADERS = {
     'Cache-Control': 'max-age=86400',
 }
+
+AWS_CALLING_FORMAT = CallingFormat.VANITY
+AWS_QUERYSTRING_AUTH = False
+AWS_S3_CUSTOM_DOMAIN = 'cdn.chrisamywedding.ca'
+AWS_S3_SECURE_URLS = False
