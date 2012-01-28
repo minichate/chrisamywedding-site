@@ -69,6 +69,15 @@ body {
 	background-position: top center;
 }
 
+strong {
+   font-weight: bold;
+}
+
+h2 {
+   font-size: 2em;
+   margin-bottom: 1em;
+}
+
 hr {
 	background-image: url(../images/hr.png);
 	border: none;
@@ -81,6 +90,7 @@ p {
 	line-height: 1.5em;
 	text-shadow: 1px 1px 0px #fff;
 	-webkit-font-smoothing: antialiased;
+	margin-bottom: 1em;
 }
 
 header {
@@ -242,4 +252,8 @@ nav ul li ul li:hover {
 .pullout, .align-left {
 	float: left;
 	margin: 0 2em 2em 0;
+}
+
+.google-map-routeplaner {
+   margin-top: 1em;
 }
