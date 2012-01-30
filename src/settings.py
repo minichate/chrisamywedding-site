@@ -141,6 +141,7 @@ INSTALLED_APPS = (
     'cms.plugins.twitter',
     'django.contrib.admin',
     'gunicorn',
+    'tinymce',
     'storages',
 )
 
