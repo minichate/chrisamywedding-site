@@ -167,3 +167,5 @@ LOGGING = {
         },
     }
 }
+
+CMS_USE_TINYMCE = False
