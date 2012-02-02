@@ -141,7 +141,6 @@ INSTALLED_APPS = (
     'cms.plugins.twitter',
     'django.contrib.admin',
     'gunicorn',
-    'tinymce',
     'storages',
 )
 
@@ -168,4 +167,3 @@ LOGGING = {
     }
 }
 
-CMS_USE_TINYMCE = False
