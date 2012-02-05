@@ -16,7 +16,7 @@ MEDIA_URL = "http://cdn.chrisamywedding.ca/media/"
 CMS_MEDIA_URL = "http://cdn.chrisamywedding.ca/cms/"
 
 AWS_HEADERS = {
-    'Cache-Control': 'max-age=86400',
+    'Cache-Control': 'max-age=1',
 }
 
 AWS_CALLING_FORMAT = CallingFormat.VANITY

@@ -1,3 +1,5 @@
+/* @override http://cdn.chrisamywedding.ca/css/style.css */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -76,9 +78,32 @@ strong {
    font-weight: bold;
 }
 
+h1, h2, h3, h4, h5, h6, p, .content ul li {
+	text-shadow: 1px 1px 0px #fff;
+}
+
+h1 {
+   font-size: 1.6em;
+   margin: 1.0em 0;
+   font-weight: bold;
+   letter-spacing: 1px;
+   text-shadow: 2px 2px 0 #fff;
+}
+
 h2 {
-   font-size: 2em;
-   margin-bottom: 1em;
+	font-size: 1.4em;
+	margin-bottom: 0.3em;
+	color: #7a1202;
+}
+
+h3 {
+	font-size: 1.1em;
+	margin-bottom: 0.3em;
+}
+
+h4 {
+	font-style: italic;
+	margin-bottom: 0.3em;
 }
 
 hr {
@@ -89,11 +114,20 @@ hr {
 	background-repeat: no-repeat;
 }
 
-p {
+p, .content ul li {
 	line-height: 1.5em;
-	text-shadow: 1px 1px 0px #fff;
-	-webkit-font-smoothing: antialiased;
 	margin-bottom: 1em;
+}
+
+.content ul {
+	list-style-type: square;
+	list-style-position: outside;
+	margin-left: 20px;
+}
+
+.content ul li {
+	margin: 0.5em 0;
+	line-height: 1.5em;
 }
 
 header {
@@ -112,16 +146,19 @@ nav {
 	background-color: #7a1202;
 	background-image: url(../images/noise.png);
 	border-radius: 4px;
-	margin-top: -1em;
+	margin-top: -1em !important;
 	position: relative;
 }
 
 nav ul {
-	margin: 0 0 1em 0;
+	margin: 0 0 1em 0 !important;
+	padding: 0 !important;
 	height: 32px;
+	list-style-type: none !important;
 }
 
 nav ul li {
+	margin: 0 !important;
 	float: left;
 	line-height: 24px;
 	border-right: 1px solid #901602;
@@ -133,10 +170,10 @@ nav ul li ul {
 	z-index: 9999;
 	height: auto;
 	background-color: #3b0501;
-	margin-top: -2px;
+	margin-top: -2px !important;
 	position: relative;
 	border-radius: 4px;
-	margin-left: -1px;
+	margin-left: -1px !important;
 	border-radius: 4px;
 }
 
@@ -164,16 +201,16 @@ nav ul li a {
 }
 
 nav ul li:hover {
-	margin-top: -6px;
+	margin-top: -6px !important;
 	background-color: #3b0501;
-	margin-left: -2px;
+	margin-left: -2px !important;
 	border-radius: 4px;
 	height: 38px;
-	margin-right: 2px;
+	margin-right: 2px !important;
 }
 
 nav ul li:hover ul li {
-	margin: 0;
+	margin: 0 !important;
 }
 
 nav ul li:hover a {
