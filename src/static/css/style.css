@@ -78,6 +78,10 @@ strong {
    font-weight: bold;
 }
 
+a, a:visited {
+	color:  #7a1202;
+}
+
 h1, h2, h3, h4, h5, h6, p, .content ul li {
 	text-shadow: 1px 1px 0px #fff;
 }
@@ -194,7 +198,7 @@ nav ul li:last-child {
 
 nav ul li a {
 	padding: 6px 16px;
-	color: #fff;
+	color: #fff !important;
 	text-decoration: none;
 	line-height: 32px;
 	text-shadow: 1px 1px 0px #000;
