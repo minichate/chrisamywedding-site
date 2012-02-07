@@ -3,28 +3,91 @@
 
 {% block base_content %}
 <div class="banner" id="banner">
+   <div class="scroller">
+      <div class="inner">
+         <img src="{{STATIC_URL}}images/scroll/four.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/one.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/two.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/fifteen.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/three.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/five.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/six.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/eight.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/nine.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/eleven.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/seven.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/twelve.jpg" />
+         <img src="{{STATIC_URL}}images/scroll/fourteen.jpg" />
+      </div>
+   </div>
    <img src="{{STATIC_URL}}images/flip_left.png" class="flip left"/>
    <img src="{{STATIC_URL}}images/flip_right.png" class="flip right" />
 </div>
 
 <script>
    $(document).ready(function() {
-      var banner = $('.banner');
+      var banner = $('.banner .scroller .inner');
+      
+      var width = 752 * $('.banner .scroller .inner img').length;
+      
+      var blocking = false;
+      var complete = function() {
+         blocking = false;
+      }
+      
       $('.banner .left').click(function(event) {
+         if (blocking) {
+            return;
+         }
+         
+         blocking = true;
+         var curLeft = parseInt(banner.css('marginLeft'));
+         
+         if (curLeft >= 0) {
+            banner.animate({
+               marginLeft: -(width - 752)
+            }, {
+               duration: 500,
+               easing: 'swing',
+               complete: complete
+            });
+            return;
+         }
+         
          banner.animate({
-            backgroundPosition: '+=752'
+            marginLeft: '+=752'
          }, {
             duration: 500,
-            easing: 'swing'
+            easing: 'swing',
+            complete: complete
          });
       });
       
       $('.banner .right').click(function(event) {
+         if (blocking) {
+            return;
+         }
+
+         blocking = true;         
+         var curLeft = parseInt(banner.css('marginLeft'));
+         
+         if (curLeft - 752 <= -(width)) {
+            banner.animate({
+               marginLeft: '0'
+            }, {
+               duration: 500,
+               easing: 'swing',
+               complete: complete
+            });
+            return;
+         }
+         
          banner.animate({
-            backgroundPosition: '-=752'
+            marginLeft: '-=752'
          }, {
             duration: 500,
-            easing: 'swing'
+            easing: 'swing',
+            complete: complete
          });
       });
    });

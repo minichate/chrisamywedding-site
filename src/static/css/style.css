@@ -270,6 +270,21 @@ nav ul li ul li:hover {
 	margin-bottom: 1em;
 	margin-top: 1em;
 	z-index: 0;
+
+}
+
+.banner .scroller {
+   overflow: hidden;
+   border-radius: 4px;
+}
+
+.banner .scroller .inner {
+   width: 100000px;
+   border-radius: 4px;
+}
+
+.banner .scroller .inner img {
+   float: left;
 }
 
 .flip {
@@ -277,6 +292,7 @@ nav ul li ul li:hover {
 	top: 50%;
 	margin-top: -31px;
 	cursor: pointer;
+	z-index: 100;
 }
 
 .left {
