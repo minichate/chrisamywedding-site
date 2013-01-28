@@ -1,5 +1,8 @@
 from settings import *
 from S3 import CallingFormat
+import dj_database_url
+
+DATABASES['default'] =  dj_database_url.config()
 
 DEBUG = False
 
