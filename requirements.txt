@@ -3,6 +3,7 @@ PIL==1.1.7
 South==0.7.3
 boto==2.1.1
 cmsplugin-gallery==0.5.3
+dj-database-url==0.2.1
 django-admin-jqueryui==1.8.22
 django-classy-tags==0.3.4.1
 django-cms==2.2
@@ -21,4 +22,3 @@ psycopg2==2.4.4
 pylibmc==1.2.3
 python-memcached==1.48
 wsgiref==0.1.2
-
