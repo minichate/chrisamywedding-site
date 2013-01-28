@@ -139,6 +139,8 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.twitter',
+    'easy_thumbnails',
+    'cmsplugin_gallery',
     'django.contrib.admin',
     'gunicorn',
     'storages',
